@@ -1,0 +1,64 @@
+// Variables
+
+// Gray-color-variables
+$white: #fffffffa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-500: #979ea7;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+// Color-variables
+$blue: #0d6efd;
+$cyan: #00a2ffe3;
+
+// Color-variables
+$primary: #1c1c1c;
+$secondary: $gray-700;
+$info: $cyan;
+$dark: $gray-900;
+
+// Links
+$link-color: $info;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+// box-shadow-variables
+$box-shadow: 0 0.5rem 0.5rem rgba($black, 0.25);
+
+// Font Family
+$font-family-base: "Roboto", sans-serif;
+
+// Card
+$card-height: 100%;
+
+// Button
+$btn-hover-bg-tint-amount: 50%;
+
+// Navbar
+$navbar-dark-color: $gray-600;
+$navbar-dark-hover-color: $cyan;
+$navbar-dark-active-color: $gray-300;
+
+// Form & Inputs
+$form-label-color: $gray-200;
+
+$input-bg: $dark;
+$input-color: $white;
+$input-border-color: $gray-800;
+
+$input-focus-bg: $gray-800;
+$input-focus-border-color: $gray-500;
+
+$input-placeholder-color: $gray-500;
+$input-plaintext-color: $white;
+
+$form-select-color: $gray-500;
+$form-select-bg: $dark;
+
+$form-file-button-color: $white;
+$form-file-button-bg: $cyan;
+$form-file-button-hover-bg: $blue;

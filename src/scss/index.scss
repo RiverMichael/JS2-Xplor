@@ -1,0 +1,25 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+#authentication {
+  background-image: url("../../images/camping_forest_night.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.profile-image {
+  max-width: 50px;
+}
+
+#header-profile i {
+  font-size: 30px;
+}
+
+#profile-info i {
+  font-size: 100px;
+}
