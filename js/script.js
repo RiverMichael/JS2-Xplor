@@ -1,3 +1,4 @@
+/** Bootstrap Form Validation */
 (() => {
   "use strict";
 
