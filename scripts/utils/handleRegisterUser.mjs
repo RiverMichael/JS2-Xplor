@@ -1,5 +1,6 @@
 import { doFetch } from "./doFetch.mjs";
 import { REGISTER_URL } from "./api.mjs";
+import { handleUserLogin } from "./handleUserLogin.mjs";
 
 export async function handleRegisterUser(userDetails) {
   const options = {
@@ -11,6 +12,7 @@ export async function handleRegisterUser(userDetails) {
   if (result.id) {
     console.log("registration is working");
     // login and redirect to /profile/
+    handleUserLogin(userDetails);
   } else {
     console.log("registration is not working");
   }

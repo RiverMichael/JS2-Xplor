@@ -41,19 +41,21 @@
             <div class="mb-2">
               <label for="signupUsername" class="form-label">Username</label>
               <input type="text" class="form-control" id="signupUsername" placeholder="user22" required />
+              <div id="signupUsernameHelp" class="form-text">Name can only use a-Z, 0-9, and _</div>
               <div class="invalid-feedback">Please enter a username</div>
             </div>
 
             <div class="mb-2">
               <label for="signupEmail" class="form-label">Email</label>
               <input type="email" class="form-control" id="signupEmail" placeholder="user@stud.noroff.no" required />
-              <div id="emailHelp" class="form-text text-light">Email must end with @noroff.no or @stud.noroff.no</div>
+              <div id="signupEmailHelp" class="form-text">Email must end with @noroff.no or @stud.noroff.no</div>
               <div class="invalid-feedback">Please enter a valid email address</div>
             </div>
 
             <div class="mb-4">
               <label for="signupPassword" class="form-label">Password</label>
               <input type="password" class="form-control" id="signupPassword" placeholder="********" minlength="8" required />
+              <div id="signupPasswordHelp" class="form-text">Password must contain min. 8 characters</div>
               <div class="invalid-feedback">Please enter a password of min. 8 characters</div>
             </div>
 
