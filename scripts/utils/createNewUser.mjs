@@ -1,4 +1,4 @@
-export function createUser() {
+export function createNewUser() {
   const userNameInput = document.querySelector("#signupUsername");
   const emailInput = document.querySelector("#signupEmail");
   const passwordInput = document.querySelector("#signupPassword");
