@@ -1,5 +1,5 @@
 import { onLoginFormSubmit } from "../utils/onLoginFormSubmit.mjs";
-import { checkIfLoggedIn } from "../utils/checkIfLoggedIn.js";
+import { checkIfLoggedIn } from "../utils/checkIfLoggedIn.mjs";
 
 function login() {
   try {

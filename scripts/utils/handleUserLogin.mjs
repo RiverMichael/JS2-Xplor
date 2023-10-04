@@ -1,5 +1,6 @@
 import { doFetch } from "./doFetch.js";
 import { LOGIN_URL } from "./api.js";
+import { saveToStorage } from "./saveToStorage.js";
 
 export async function handleUserLogin(userDetails) {
   try {
@@ -12,9 +13,10 @@ export async function handleUserLogin(userDetails) {
     console.log(result);
 
     const accessToken = result.accessToken;
-    localStorage.setItem("accessToken", accessToken);
+    saveToStorage("accessToken", accessToken);
+
     const userName = result.name;
-    localStorage.setItem("name", userName);
+    saveToStorage("userName", userName);
 
     if (accessToken) {
       window.location.href = "/profile/";
