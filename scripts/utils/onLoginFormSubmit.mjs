@@ -1,5 +1,5 @@
 import { handleUserLogin } from "./handleUserLogin.mjs";
-import { createUser } from "./createUser.mjs";
+import { createUser } from "./createUser.js";
 
 export function onLoginFormSubmit(event) {
   event.preventDefault();

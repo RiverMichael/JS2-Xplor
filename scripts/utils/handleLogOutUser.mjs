@@ -1,6 +1,6 @@
-import { logOutUser } from "./logOutUser.mjs";
+import { logOutUser } from "./logOutUser.js";
 
-export function handleLogOut() {
+export function handleLogOutUser() {
   const logOutButtons = document.querySelectorAll(".logout-button");
 
   logOutButtons.forEach((button) => {
