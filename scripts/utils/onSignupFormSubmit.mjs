@@ -1,4 +1,4 @@
-import { createNewUser } from "./createNewUser.mjs";
+import { createNewUser } from "./createNewUser.js";
 import { handleRegisterUser } from "./handleRegisterUser.mjs";
 
 export function onSignupFormSubmit(event) {
