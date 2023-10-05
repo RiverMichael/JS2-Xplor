@@ -83,10 +83,10 @@
                 </div>
               </div>
 
-              <form action="" class="bg-primary shadow-sm p-3 border border-secondary rounded-4" id="form-new-post">
+              <form action="POST" class="bg-primary shadow-sm p-3 border border-secondary rounded-4" id="form-new-post">
                 <div class="mb-3 shadow-sm">
                   <label for="newPostTitle" class="form-label">Title</label>
-                  <input type="text" name="title" id="newPostTitle" class="form-control" placeholder="Paragliding in Bolivia" />
+                  <input type="text" name="title" id="newPostTitle" class="form-control" placeholder="Paragliding in Bolivia" required />
                 </div>
                 <div class="mb-3 shadow-sm">
                   <label for="newPostKeywords" class="form-label">Keywords</label>
@@ -96,18 +96,33 @@
                   <label for="newPostStory" class="form-label">Story</label>
                   <textarea name="story" id="newPostStory" cols="25" rows="4" class="form-control shadow-sm" placeholder="The rush of wind, the awe-inspiring vistas of rugged mountains and pristine lakes, and the feeling of absolute freedom made this paragliding adventure in Bolivia an unforgettable journey above the clouds"></textarea>
                 </div>
-
                 <div class="mb-3">
                   <label for="newPostImage" class="form-label"
                     ><i class="bi bi-images"><span class="ms-2 fst-normal">Add image URL</span></i></label
                   >
-                  <input class="form-control form-control-sm" id="newPostImage" type="url" placeholder="http://" />
+                  <input class="form-control form-control-sm" id="newPostImage" type="url" name="image" placeholder="http://" />
                 </div>
                 <div class="d-flex justify-content-end">
                   <button type="submit" class="btn btn-info text-white text-uppercase fw-bold">publish</button>
                 </div>
               </form>
             </section>
+            <div class="toast align-items-center text-bg-success text-white mt-2 border-0" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">Your post was successfully published</div>
+                <button type="button" class="btn-close btn-close-white me-2 mt-2" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+
+            <div class="toast-container position-fixed mt-2 top-0 end-0 p-3">
+              <div class="toast bg-success" id="newPostValidation" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-success text-light">
+                  <h5 class="my-0">Post published</h5>
+                  <button class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="close"></button>
+                </div>
+                <div class="toast-body fs-6">Your post was successfully published</div>
+              </div>
+            </div>
           </div>
 
           <section class="col-12 col-md-7 col-lg-8 col-xl-9">
