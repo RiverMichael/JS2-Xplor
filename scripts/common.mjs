@@ -1,5 +1,5 @@
 import { handleLogOutUser } from "./utils/handleLogOutUser.mjs";
-import { bootstrapFormValidation } from "./utils/bootstrapFormValidation.js";
+import { bootstrapFormValidation } from "./components/bootstrapFormValidation.js";
 
 function main() {
   try {

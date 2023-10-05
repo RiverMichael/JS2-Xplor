@@ -1,6 +1,6 @@
 import { POSTS_URL } from "./api.js";
 import { doFetch } from "./doFetch.js";
-import { postData } from "../components/fetchOptions.mjs";
+import { postData } from "./fetchOptions.mjs";
 
 export async function handleCreateNewPost(postDetails) {
   try {
