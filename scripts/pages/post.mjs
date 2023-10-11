@@ -1,15 +1,18 @@
 import { renderPostDetails } from "../components/render.mjs";
 import { getPostDetails } from "../utils/getPostDetails.mjs";
+import { createMessage } from "../components/createMessage.js";
 
-async function post() {
+const postContainer = document.querySelector("#post-details");
+
+async function displayPost() {
   try {
     const post = await getPostDetails();
-    console.log({ post });
 
     document.title = `${post.title} | ${post.author.name} | Xplor`;
-    // Render post details
+    renderPostDetails(post, postContainer);
   } catch (error) {
     console.log(error);
+    createMessage(postContainer, ["alert", "alert-danger", "text-center", "fw-bold"], "There was a problem while loading this post, please try again");
   }
 }
-post();
+displayPost();
