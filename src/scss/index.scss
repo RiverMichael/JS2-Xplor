@@ -13,7 +13,14 @@
 }
 
 .profile-image {
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-header i::before {
+  font-size: 50px;
 }
 
 #header-profile i {
