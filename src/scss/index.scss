@@ -27,6 +27,17 @@
   font-size: 30px;
 }
 
-#profile-info i {
+#profile-avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#profile-avatar i::before {
   font-size: 100px;
+}
+
+#link-goBack {
+  cursor: pointer;
 }

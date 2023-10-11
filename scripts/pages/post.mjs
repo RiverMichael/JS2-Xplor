@@ -3,10 +3,15 @@ import { getPostDetails } from "../utils/getPostDetails.mjs";
 import { createMessage } from "../components/createMessage.js";
 
 const postContainer = document.querySelector("#post-details");
+const linkGoBack = document.querySelector("#link-goBack");
+linkGoBack.addEventListener("click", function () {
+  history.back();
+});
 
 async function displayPost() {
   try {
     const post = await getPostDetails();
+    console.log({ post });
 
     document.title = `${post.title} | ${post.author.name} | Xplor`;
     renderPostDetails(post, postContainer);
