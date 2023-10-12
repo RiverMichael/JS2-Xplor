@@ -58,8 +58,20 @@ $input-plaintext-color: $white;
 $form-select-color: $gray-500;
 $form-select-bg: $dark;
 
-$form-file-button-color: $white;
-$form-file-button-bg: $cyan;
-$form-file-button-hover-bg: $blue;
-
 $form-text-color: $gray-500;
+
+$form-check-label-color: $gray-500;
+$form-check-input-bg: $dark;
+
+$accordion-bg: $dark;
+$accordion-border-color: $gray-800;
+
+$accordion-button-padding-y: 0.5rem;
+$accordion-button-padding-x: 0.75rem;
+$accordion-button-bg: $dark;
+$accordion-button-active-bg: $dark;
+
+$accordion-button-color: $gray-500;
+$accordion-button-active-color: $gray-500;
+$accordion-icon-color: $gray-500;
+$accordion-icon-active-color: $gray-500;
