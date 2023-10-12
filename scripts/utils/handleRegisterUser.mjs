@@ -11,10 +11,7 @@ export async function handleRegisterUser(userDetails) {
 
     const result = await doFetch(REGISTER_URL, options);
     if (result.id) {
-      console.log("registration is working");
       handleUserLogin(userDetails);
-    } else {
-      console.log("registration is not working");
     }
   } catch (error) {
     console.log(error);

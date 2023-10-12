@@ -1,9 +1,7 @@
 export function createNewPost() {
   const form = document.querySelector("#form-new-post");
   const formData = new FormData(form);
-
   const createPostObject = Object.fromEntries(formData.entries());
-
   const newPost = {
     title: createPostObject.title,
     tags: createPostObject.keywords
@@ -15,7 +13,5 @@ export function createNewPost() {
     body: createPostObject.story,
     media: createPostObject.image,
   };
-  console.log({ newPost });
-
   return newPost;
 }
