@@ -8,15 +8,14 @@ export async function handleUserLogin(userDetails) {
       method: "POST",
       body: JSON.stringify(userDetails),
     };
-
     const result = await doFetch(LOGIN_URL, options);
-    console.log(result);
-
-    const accessToken = result.accessToken;
-    saveToStorage("accessToken", accessToken);
-
-    const userName = result.name;
-    saveToStorage("userName", userName);
+    let accessToken;
+    if (result.accessToken) {
+      accessToken = result.accessToken;
+      saveToStorage("accessToken", accessToken);
+      const userName = result.name;
+      saveToStorage("userName", userName);
+    }
 
     if (accessToken) {
       window.location.href = "/profile/";
