@@ -1,15 +1,9 @@
 import { getFilterFormValues } from "./getFilterFormValues.js";
-import { filterPosts } from "./filterPosts.mjs";
+import { filterPosts } from "./filterPosts.js";
 import { displayFilteredPosts } from "../components/displayFilteredPosts.mjs";
 
-const feedPostsContainer = document.querySelector("#feed-container");
-
-export async function handleFilterForm() {
-  try {
-    const termsToFilterBy = getFilterFormValues();
-    const filteredPosts = await filterPosts(termsToFilterBy);
-    displayFilteredPosts(filteredPosts, feedPostsContainer);
-  } catch (error) {
-    console.log(error);
-  }
+export function handleFilterForm(posts, parentElement) {
+  const termsToFilterBy = getFilterFormValues();
+  const filteredPosts = filterPosts(posts, termsToFilterBy);
+  displayFilteredPosts(filteredPosts, parentElement, "No post was found using the filter(s)");
 }

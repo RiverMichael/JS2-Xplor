@@ -9,8 +9,6 @@ const postsContainer = document.querySelector("#profile-posts");
 async function displayProfile() {
   try {
     const userName = getFromStorage("userName");
-    console.log({ userName });
-
     const profileData = await getProfile(userName);
     const posts = await getProfilePosts(userName);
 

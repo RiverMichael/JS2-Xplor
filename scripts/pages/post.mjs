@@ -11,8 +11,6 @@ linkGoBack.addEventListener("click", function () {
 async function displayPost() {
   try {
     const post = await getPostDetails();
-    console.log({ post });
-
     document.title = `${post.title} | ${post.author.name} | Xplor`;
     renderPostDetails(post, postContainer);
   } catch (error) {
