@@ -1,6 +1,10 @@
 import { handleFilterForm } from "./handleFilterForm.mjs";
 
-export function onFilterFormSubmit(event) {
-  event.preventDefault();
-  handleFilterForm();
+const filterForm = document.querySelector("#filterPostsForm");
+
+export function onFilterFormSubmit(filterList, parentElement) {
+  filterForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    handleFilterForm(filterList, parentElement);
+  });
 }
