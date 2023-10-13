@@ -12,6 +12,8 @@ async function displayProfile() {
     const profileData = await getProfile(userName);
     const posts = await getProfilePosts(userName);
 
+    document.title = `${profileData.name} | Xplor`;
+
     renderProfileDetails(profileData);
     renderProfilePosts(posts, postsContainer);
   } catch (error) {
