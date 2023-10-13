@@ -75,30 +75,30 @@
 
                   <div class="accordion-collapse collapse" id="edit-collapse" data-bs-parent="accordionEditPost">
                     <div class="accordion-body">
-                      <form action="PUT" id="editPostForm" class="bg-primary shadow-sm p-3 border border-secondary rounded-4">
+                      <form id="updatePostForm" class="bg-primary shadow-sm p-3 border border-secondary rounded-4">
                         <div class="row">
                           <div class="col mb-3 shadow-sm">
-                            <label for="editPostTitle" class="form-label">Title</label>
-                            <input type="text" name="title" id="editPostTitle" class="form-control" placeholder="New title" />
+                            <label for="updatePostTitle" class="form-label">Title</label>
+                            <input type="text" name="title" id="updatePostTitle" class="form-control" placeholder="New title" />
                           </div>
 
                           <div class="col mb-3 shadow-sm">
-                            <label for="editPostKeywords" class="form-label">Keywords</label>
-                            <input type="text" name="keywords" id="editPostKeywords" class="form-control" placeholder="New keywords" />
+                            <label for="updatePostKeywords" class="form-label">Keywords</label>
+                            <input type="text" name="keywords" id="updatePostKeywords" class="form-control" placeholder="New keywords" />
                           </div>
                         </div>
 
                         <div class="mb-3">
-                          <label for="editPostStory" class="form-label">Story</label>
-                          <textarea name="story" id="editPostStory" cols="30" rows="3" class="form-control shadow-sm" placeholder="Updated story"></textarea>
+                          <label for="updatePostStory" class="form-label">Story</label>
+                          <textarea name="story" id="updatePostStory" cols="30" rows="3" class="form-control shadow-sm" placeholder="Updated story"></textarea>
                         </div>
 
                         <div class="row align-items-end mb-3">
                           <div class="col mb-3">
-                            <label for="editPostImage" class="form-label"
+                            <label for="updatePostImage" class="form-label"
                               ><i class="bi bi-images"><span class="ms-2 fst-normal">Add image URL</span></i></label
                             >
-                            <input class="form-control form-control-sm" id="editPostImage" type="url" name="image" placeholder="http://" />
+                            <input class="form-control form-control-sm" id="updatePostImage" type="url" name="image" placeholder="http://" />
                           </div>
 
                           <div class="col-auto mb-3">
@@ -112,6 +112,16 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div class="toast-container position-fixed mt-2 top-0 end-0 p-3">
+              <div class="toast bg-success" id="updatePostValidation" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-success text-light">
+                  <h5 class="my-0">Post update</h5>
+                  <button class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="close"></button>
+                </div>
+                <div class="toast-body fs-6">Your post was successfully updated</div>
               </div>
             </div>
           </div>
