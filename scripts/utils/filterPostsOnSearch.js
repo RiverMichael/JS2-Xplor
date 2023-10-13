@@ -1,7 +1,5 @@
 export function filterPostsOnSearch(posts, term) {
-  const filteredPosts = posts.filter((post) => {
-    return post["title"].toLowerCase().trim().includes(term.toLowerCase().trim());
-  });
-
+  const searchTerm = term.toLowerCase().trim();
+  const filteredPosts = posts.filter(({ title, body, author }) => title.toLowerCase().trim().includes(searchTerm) || body.toLowerCase().trim().includes(searchTerm) || author.name.toLowerCase().trim().includes(searchTerm));
   return filteredPosts;
 }

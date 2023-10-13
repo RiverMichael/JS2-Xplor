@@ -70,7 +70,7 @@ export function createPostHtml(post, parentElement) {
 
 export function createPostDetailsHtml(post, parentElement) {
   const card = document.createElement("div");
-  card.classList.add("col", "card", "bg-dark", "text-white", "rounded-4", "shadow");
+  card.classList.add("card", "bg-dark", "text-white", "rounded-4", "shadow");
 
   const cardHeader = document.createElement("div");
   cardHeader.classList.add("card-header", "d-flex", "align-items-center");
@@ -109,7 +109,7 @@ export function createPostDetailsHtml(post, parentElement) {
     cardBody.append(cardImage);
   }
 
-  const cardTitle = document.createElement("h2");
+  const cardTitle = document.createElement("h1");
   cardTitle.classList.add("card-title", "fs-5", "mb-3");
   cardTitle.innerText = post.title;
   cardBody.append(cardTitle);

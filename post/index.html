@@ -40,12 +40,12 @@
               <button class="nav-item nav-link text-uppercase fs-5 d-sm-none logout-button">log out</button>
 
               <div class="nav-item dropdown d-none d-sm-block">
-                <button class="btn nav-link dropdown-toggle d-flex align-items-center" id="header-profile" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn nav-link dropdown-toggle d-flex align-items-center" id="header-profile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="profile menu">
                   <i class="bi bi-person-circle"></i>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a href="#" class="dropdown-item">Edit my profile</a>
+                    <a href="/profile/" class="dropdown-item">My profile</a>
                   </li>
                   <li>
                     <button class="dropdown-item logout-button" type="button">Log out</button>
@@ -64,7 +64,61 @@
           <i class="bi bi-arrow-left me-2 fs-4"></i>
           <p class="m-0">Go back</p>
         </div>
-        <section id="post-details"></section>
+        <section class="container">
+          <div class="row justify-content-center visually-hidden" id="editPostContainer">
+            <div class="col col-lg-8">
+              <div class="accordion accordion-flush mb-4" id="accordionEditPost">
+                <div class="accordion-item bg-primary text-white">
+                  <div class="accordion-header d-flex justify-content-center">
+                    <button type="button" class="btn px-4 py-1 btn-info text-white text-uppercase fw-bold collapsed" data-bs-toggle="collapse" data-bs-target="#edit-collapse" aria-expanded="false" area-controls="edit-collapse">Edit post</button>
+                  </div>
+
+                  <div class="accordion-collapse collapse" id="edit-collapse" data-bs-parent="accordionEditPost">
+                    <div class="accordion-body">
+                      <form action="PUT" id="editPostForm" class="bg-primary shadow-sm p-3 border border-secondary rounded-4">
+                        <div class="row">
+                          <div class="col mb-3 shadow-sm">
+                            <label for="editPostTitle" class="form-label">Title</label>
+                            <input type="text" name="title" id="editPostTitle" class="form-control" placeholder="New title" />
+                          </div>
+
+                          <div class="col mb-3 shadow-sm">
+                            <label for="editPostKeywords" class="form-label">Keywords</label>
+                            <input type="text" name="keywords" id="editPostKeywords" class="form-control" placeholder="New keywords" />
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="editPostStory" class="form-label">Story</label>
+                          <textarea name="story" id="editPostStory" cols="30" rows="3" class="form-control shadow-sm" placeholder="Updated story"></textarea>
+                        </div>
+
+                        <div class="row align-items-end mb-3">
+                          <div class="col mb-3">
+                            <label for="editPostImage" class="form-label"
+                              ><i class="bi bi-images"><span class="ms-2 fst-normal">Add image URL</span></i></label
+                            >
+                            <input class="form-control form-control-sm" id="editPostImage" type="url" name="image" placeholder="http://" />
+                          </div>
+
+                          <div class="col-auto mb-3">
+                            <button type="submit" class="btn btn-info text-white text-uppercase fw-bold">update</button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button type="button" id="buttonDeletePost" class="btn btn-sm btn-danger text-white text-uppercase fw-bold">delete post</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col col-lg-8" id="post-details"></div>
+          </div>
+        </section>
       </div>
     </main>
 
