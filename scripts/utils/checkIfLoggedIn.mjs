@@ -7,6 +7,6 @@ export function checkIfLoggedIn() {
   if (!accessToken && currentPath !== "/" && currentPath !== "/signup/") {
     window.location.href = "/";
   } else if (accessToken && currentPath === "/") {
-    window.location.href = "/profile/";
+    window.location.href = "/feed/";
   }
 }

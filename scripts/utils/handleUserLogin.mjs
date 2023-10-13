@@ -18,7 +18,7 @@ export async function handleUserLogin(userDetails) {
     }
 
     if (accessToken) {
-      window.location.href = "/profile/";
+      window.location.href = "/feed/";
     } else if (result.statusCode === 401) {
       const errorMessage = document.querySelector("#login-failed");
       errorMessage.classList.remove("visually-hidden");
