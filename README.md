@@ -10,9 +10,7 @@
 <h3>JavaScript2 (JS2)- Xplor</h3>
 <p>A social media application built with JavaScript, Bootstrap and Sass.</p>
 
-<!-- [Link to live site][live-site] -  -->
-
-[Link to project][github-repo]
+[Link to project][github-repo] - [Link to live site][live-site]
 
 </div>
 
@@ -49,6 +47,8 @@
 ### Description
 
 This is my project for the course JavaScript 2 (JS2) at [Noroff](https://www.noroff.no). The assignment was to create JavaScript functionality for a responsive social media application that I built in the course CSS Frameworks using Bootstrap and and customizing styles with Sass.
+
+For the deployment of the website I'm using [Netlify](https://app.netlify.com).
 
 ### Built With
 
@@ -130,9 +130,7 @@ Michael "River" Nilsson - [mrn@michaelriver.dev](mailto:mrn@michaelriver.dev) - 
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[Link to project][github-repo]
-
-<!-- | [Link to live site][live-site] -->
+[Link to project][github-repo] - [Link to live site][live-site]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,13 +141,14 @@ Michael "River" Nilsson - [mrn@michaelriver.dev](mailto:mrn@michaelriver.dev) - 
 - [Bootstrap](getbootstrap.com)
 - [Sass](https://sass-lang.com)
 - [Noroff](https://www.noroff.no)
+- [Netlify](https://app.netlify.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [github-repo]: https://github.com/RiverMichael/JS2-Xplor.git
-[live-site]: https://
+[live-site]: https://xplor.michaelriver.dev/
 [product-screenshot]: /images/screenshot.jpg
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/michaelrivernilsson
