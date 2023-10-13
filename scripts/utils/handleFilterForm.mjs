@@ -1,5 +1,5 @@
-import { getFilterFormValues } from "./getFilterFormValues.js";
-import { filterPosts } from "./filterPosts.js";
+import { getFilterFormValues } from "./getFilterFormValues.mjs";
+import { filterPosts } from "./filterPosts.mjs";
 import { displayFilteredPosts } from "../components/displayFilteredPosts.mjs";
 
 export function handleFilterForm(posts, parentElement) {

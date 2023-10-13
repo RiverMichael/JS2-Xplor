@@ -1,5 +1,5 @@
-import { doFetch } from "./doFetch.js";
-import { REGISTER_URL } from "./api.js";
+import { doFetch } from "../api/doFetch.mjs";
+import { REGISTER_URL } from "../api/api.mjs";
 import { handleUserLogin } from "./handleUserLogin.mjs";
 
 export async function handleRegisterUser(userDetails) {

@@ -1,5 +1,5 @@
-import { createPostHtml, createPostDetailsHtml } from "./createHTML.js";
-import { clearHTML } from "./clearHTML.js";
+import { createPostHtml, createPostDetailsHtml } from "./createHTML.mjs";
+import { clearHTML } from "./clearHTML.mjs";
 
 export function renderPosts(posts, parentElement) {
   posts.map((post) => {

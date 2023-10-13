@@ -1,6 +1,6 @@
-import { clearHTML } from "./clearHTML.js";
+import { clearHTML } from "./clearHTML.mjs";
 import { renderPosts } from "./render.mjs";
-import { createMessage } from "./createMessage.js";
+import { createMessage } from "./createMessage.mjs";
 
 export function displayFilteredPosts(posts, parentElement, errorMessage) {
   if (posts.length) {

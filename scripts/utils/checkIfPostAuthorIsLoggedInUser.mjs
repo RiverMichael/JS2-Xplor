@@ -1,5 +1,5 @@
 import { displayPostUpdateForm } from "../components/displayPostUpdateForm.mjs";
-import { getFromStorage } from "./getFromStorage.js";
+import { getFromStorage } from "./getFromStorage.mjs";
 
 export function checkIfPostAuthorIsLoggedInUser(post) {
   const postAuthor = post.author.name;

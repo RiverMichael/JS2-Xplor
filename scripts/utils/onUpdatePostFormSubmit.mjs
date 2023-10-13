@@ -1,6 +1,6 @@
 import { handleUpdatePost } from "./handleUpdatePost.mjs";
-import { showToast } from "../components/showToast.js";
-import { clearHTML } from "../components/clearHTML.js";
+import { showToast } from "../components/showToast.mjs";
+import { clearHTML } from "../components/clearHTML.mjs";
 import { renderPostDetails } from "../components/render.mjs";
 import { getPostDetails } from "./getPostDetails.mjs";
 

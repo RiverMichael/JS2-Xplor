@@ -1,7 +1,7 @@
-import { POST_DETAILS_URL } from "./api.js";
+import { POST_DETAILS_URL } from "../api/api.mjs";
 import { createUpdatedPost } from "./createUpdatedPost.mjs";
-import { doFetch } from "./doFetch.js";
-import { putData } from "./fetchOptions.mjs";
+import { doFetch } from "../api/doFetch.mjs";
+import { putData } from "../api/fetchOptions.mjs";
 
 export async function handleUpdatePost() {
   try {

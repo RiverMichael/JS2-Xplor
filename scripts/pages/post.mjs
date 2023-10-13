@@ -1,6 +1,6 @@
 import { renderPostDetails } from "../components/render.mjs";
 import { getPostDetails } from "../utils/getPostDetails.mjs";
-import { createMessage } from "../components/createMessage.js";
+import { createMessage } from "../components/createMessage.mjs";
 import { checkIfPostAuthorIsLoggedInUser } from "../utils/checkIfPostAuthorIsLoggedInUser.mjs";
 import { onUpdatePostFormSubmit } from "../utils/onUpdatePostFormSubmit.mjs";
 

@@ -1,7 +1,7 @@
-import { createNewUser } from "./createNewUser.js";
+import { createNewUser } from "./createNewUser.mjs";
 import { handleRegisterUser } from "./handleRegisterUser.mjs";
 
-export function onSignupFormSubmit(event) {
+export function onRegisterFormSubmit(event) {
   event.preventDefault();
   const userDetails = createNewUser();
   handleRegisterUser(userDetails);

@@ -1,4 +1,4 @@
-import { filterPostsOnSearch } from "./filterPostsOnSearch.js";
+import { filterPostsOnSearch } from "./filterPostsOnSearch.mjs";
 import { displayFilteredPosts } from "../components/displayFilteredPosts.mjs";
 
 export function handleOnSearch(posts, term, parentElement) {

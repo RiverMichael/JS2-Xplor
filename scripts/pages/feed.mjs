@@ -1,8 +1,8 @@
 import { renderPosts } from "../components/render.mjs";
 import { getPosts } from "../utils/getPosts.mjs";
 import { onCreatePostFormSubmit } from "../utils/onCreatePostFormSubmit.mjs";
-import { createMessage } from "../components/createMessage.js";
-import { clearHTML } from "../components/clearHTML.js";
+import { createMessage } from "../components/createMessage.mjs";
+import { clearHTML } from "../components/clearHTML.mjs";
 import { onFilterFormSubmit } from "../utils/onFilterFormSubmit.mjs";
 import { setSearchListeners } from "../utils/setSearchListeners.mjs";
 

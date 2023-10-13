@@ -19,7 +19,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script type="module" src="../scripts/common.mjs" defer></script>
-    <script type="module" src="/scripts/pages/signup.mjs"></script>
+    <script type="module" src="/scripts/pages/register.mjs"></script>
   </head>
   <body class="bg-primary d-flex flex-column justify-content-center text-white min-vh-100">
     <header class="fixed-top p-3">
@@ -37,25 +37,25 @@
         <div class="py-5 d-flex flex-column align-items-center">
           <h1 class="text-center fw-bold mb-5">Sign up</h1>
 
-          <form class="needs-validation" id="signup-form" novalidate>
+          <form class="needs-validation" id="register-form" novalidate>
             <div class="mb-2">
-              <label for="signupUsername" class="form-label">Username</label>
-              <input type="text" class="form-control" id="signupUsername" placeholder="user22" required />
-              <div id="signupUsernameHelp" class="form-text">Name can only use a-Z, 0-9, and _</div>
+              <label for="registerUsername" class="form-label">Username</label>
+              <input type="text" class="form-control" id="registerUsername" placeholder="user22" required />
+              <div id="registerUsernameHelp" class="form-text">Name can only use a-Z, 0-9, and _</div>
               <div class="invalid-feedback">Please enter a username</div>
             </div>
 
             <div class="mb-2">
-              <label for="signupEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="signupEmail" placeholder="user@stud.noroff.no" required />
-              <div id="signupEmailHelp" class="form-text">Email must end with @noroff.no or @stud.noroff.no</div>
+              <label for="registerEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="registerEmail" placeholder="user@stud.noroff.no" required />
+              <div id="registerEmailHelp" class="form-text">Email must end with @noroff.no or @stud.noroff.no</div>
               <div class="invalid-feedback">Please enter a valid email address</div>
             </div>
 
             <div class="mb-4">
-              <label for="signupPassword" class="form-label">Password</label>
-              <input type="password" class="form-control" id="signupPassword" placeholder="********" minlength="8" required />
-              <div id="signupPasswordHelp" class="form-text">Password must contain min. 8 characters</div>
+              <label for="registerPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="registerPassword" placeholder="********" minlength="8" required />
+              <div id="registerPasswordHelp" class="form-text">Password must contain min. 8 characters</div>
               <div class="invalid-feedback">Please enter a password of min. 8 characters</div>
             </div>
 
