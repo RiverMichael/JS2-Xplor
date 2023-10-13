@@ -65,7 +65,56 @@
           <p class="m-0">Go back</p>
         </div>
         <section class="container">
-          <div class="row justify-content-center" id="post-details"></div>
+          <div class="row justify-content-center visually-hidden" id="editPostContainer">
+            <div class="col col-lg-8">
+              <div class="accordion accordion-flush mb-4" id="accordionEditPost">
+                <div class="accordion-item bg-primary text-white">
+                  <div class="accordion-header d-flex justify-content-center">
+                    <button type="button" class="btn px-4 py-1 btn-info text-white text-uppercase fw-bold collapsed" data-bs-toggle="collapse" data-bs-target="#edit-collapse" aria-expanded="false" area-controls="edit-collapse">Edit post</button>
+                  </div>
+
+                  <div class="accordion-collapse collapse" id="edit-collapse" data-bs-parent="accordionEditPost">
+                    <div class="accordion-body">
+                      <form action="PUT" id="editPostForm" class="bg-primary shadow-sm p-3 border border-secondary rounded-4">
+                        <div class="row">
+                          <div class="col mb-3 shadow-sm">
+                            <label for="editPostTitle" class="form-label">Title</label>
+                            <input type="text" name="title" id="editPostTitle" class="form-control" placeholder="New title" />
+                          </div>
+
+                          <div class="col mb-3 shadow-sm">
+                            <label for="editPostKeywords" class="form-label">Keywords</label>
+                            <input type="text" name="keywords" id="editPostKeywords" class="form-control" placeholder="New keywords" />
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="editPostStory" class="form-label">Story</label>
+                          <textarea name="story" id="editPostStory" cols="30" rows="3" class="form-control shadow-sm" placeholder="Updated story"></textarea>
+                        </div>
+
+                        <div class="row align-items-end mb-3">
+                          <div class="col mb-3">
+                            <label for="editPostImage" class="form-label"
+                              ><i class="bi bi-images"><span class="ms-2 fst-normal">Add image URL</span></i></label
+                            >
+                            <input class="form-control form-control-sm" id="editPostImage" type="url" name="image" placeholder="http://" />
+                          </div>
+
+                          <div class="col-auto mb-3">
+                            <button type="submit" class="btn btn-info text-white text-uppercase fw-bold">update</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col col-lg-8" id="post-details"></div>
+          </div>
         </section>
       </div>
     </main>

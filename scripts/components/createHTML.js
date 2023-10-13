@@ -70,7 +70,7 @@ export function createPostHtml(post, parentElement) {
 
 export function createPostDetailsHtml(post, parentElement) {
   const card = document.createElement("div");
-  card.classList.add("col", "col-lg-8", "card", "bg-dark", "text-white", "rounded-4", "shadow");
+  card.classList.add("card", "bg-dark", "text-white", "rounded-4", "shadow");
 
   const cardHeader = document.createElement("div");
   cardHeader.classList.add("card-header", "d-flex", "align-items-center");
