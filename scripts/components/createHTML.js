@@ -109,7 +109,7 @@ export function createPostDetailsHtml(post, parentElement) {
     cardBody.append(cardImage);
   }
 
-  const cardTitle = document.createElement("h2");
+  const cardTitle = document.createElement("h1");
   cardTitle.classList.add("card-title", "fs-5", "mb-3");
   cardTitle.innerText = post.title;
   cardBody.append(cardTitle);
