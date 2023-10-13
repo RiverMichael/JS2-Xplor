@@ -16,9 +16,9 @@ export async function onUpdatePostFormSubmit(event) {
 
     const postDetailsContainer = document.querySelector("#post-details");
     const post = await getPostDetails();
+
     clearHTML(postDetailsContainer);
     renderPostDetails(post, postDetailsContainer);
-    console.log("POST UPDATED");
   } catch (error) {
     console.log(error);
   }
