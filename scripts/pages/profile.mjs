@@ -3,6 +3,7 @@ import { getFromStorage } from "../utils/getFromStorage.mjs";
 import { renderProfileDetails, renderPosts as renderProfilePosts } from "../components/render.mjs";
 import { getProfilePosts } from "../utils/getProfilePosts.mjs";
 import { createMessage } from "../components/createMessage.mjs";
+import { clearHTML } from "../components/clearHTML.mjs";
 
 const postsContainer = document.querySelector("#profile-posts");
 
@@ -14,6 +15,7 @@ async function displayProfile() {
 
     document.title = `${profileData.name} | Xplor`;
 
+    clearHTML(postsContainer);
     renderProfileDetails(profileData);
     renderProfilePosts(posts, postsContainer);
   } catch (error) {
