@@ -1,6 +1,6 @@
-import { doFetch } from "./doFetch.js";
-import { LOGIN_URL } from "./api.js";
-import { saveToStorage } from "./saveToStorage.js";
+import { doFetch } from "../api/doFetch.mjs";
+import { LOGIN_URL } from "../api/api.mjs";
+import { saveToStorage } from "./saveToStorage.mjs";
 
 export async function handleUserLogin(userDetails) {
   try {

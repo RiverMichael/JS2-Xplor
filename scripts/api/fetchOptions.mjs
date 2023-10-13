@@ -1,4 +1,4 @@
-import { getFromStorage } from "./getFromStorage.js";
+import { getFromStorage } from "../utils/getFromStorage.mjs";
 
 const token = getFromStorage("accessToken");
 

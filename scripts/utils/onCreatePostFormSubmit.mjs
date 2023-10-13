@@ -1,7 +1,7 @@
 import { handleCreateNewPost } from "./handleCreateNewPost.mjs";
-import { showToast } from "../components/showToast.js";
+import { showToast } from "../components/showToast.mjs";
 import { getPosts } from "./getPosts.mjs";
-import { clearHTML } from "../components/clearHTML.js";
+import { clearHTML } from "../components/clearHTML.mjs";
 import { renderPosts } from "../components/render.mjs";
 
 export async function onCreatePostFormSubmit(event) {

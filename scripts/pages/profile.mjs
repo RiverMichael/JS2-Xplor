@@ -1,8 +1,8 @@
 import { getProfile } from "../utils/getProfile.mjs";
-import { getFromStorage } from "../utils/getFromStorage.js";
+import { getFromStorage } from "../utils/getFromStorage.mjs";
 import { renderProfileDetails, renderPosts as renderProfilePosts } from "../components/render.mjs";
 import { getProfilePosts } from "../utils/getProfilePosts.mjs";
-import { createMessage } from "../components/createMessage.js";
+import { createMessage } from "../components/createMessage.mjs";
 
 const postsContainer = document.querySelector("#profile-posts");
 

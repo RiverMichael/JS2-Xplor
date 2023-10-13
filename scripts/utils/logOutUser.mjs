@@ -1,4 +1,4 @@
-import { clearStorage } from "./clearStorage.js";
+import { clearStorage } from "./clearStorage.mjs";
 
 export function logOutUser() {
   clearStorage();

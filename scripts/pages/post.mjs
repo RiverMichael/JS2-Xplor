@@ -1,8 +1,9 @@
 import { renderPostDetails } from "../components/render.mjs";
 import { getPostDetails } from "../utils/getPostDetails.mjs";
-import { createMessage } from "../components/createMessage.js";
+import { createMessage } from "../components/createMessage.mjs";
 import { checkIfPostAuthorIsLoggedInUser } from "../utils/checkIfPostAuthorIsLoggedInUser.mjs";
 import { onUpdatePostFormSubmit } from "../utils/onUpdatePostFormSubmit.mjs";
+import { handleDeletePost } from "../utils/handleDeletePost.mjs";
 
 const postContainer = document.querySelector("#post-details");
 const linkGoBack = document.querySelector("#link-goBack");
@@ -15,6 +16,8 @@ async function displayPost() {
     const post = await getPostDetails();
     const updatePostForm = document.querySelector("#updatePostForm");
     updatePostForm.addEventListener("submit", onUpdatePostFormSubmit);
+    const deletePostButton = document.querySelector("#buttonDeletePost");
+    deletePostButton.addEventListener("click", handleDeletePost);
 
     document.title = `${post.title} | ${post.author.name} | Xplor`;
 

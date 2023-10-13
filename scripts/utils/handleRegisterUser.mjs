@@ -1,8 +1,11 @@
-import { doFetch } from "./doFetch.js";
-import { REGISTER_URL } from "./api.js";
+import { doFetch } from "../api/doFetch.mjs";
+import { REGISTER_URL } from "../api/api.mjs";
 import { handleUserLogin } from "./handleUserLogin.mjs";
+import { showToast } from "../components/showToast.mjs";
 
 export async function handleRegisterUser(userDetails) {
+  const registrationValidation = document.querySelector("#registrationValidation");
+
   try {
     const options = {
       method: "POST",
@@ -11,7 +14,10 @@ export async function handleRegisterUser(userDetails) {
 
     const result = await doFetch(REGISTER_URL, options);
     if (result.id) {
-      handleUserLogin(userDetails);
+      showToast(registrationValidation);
+      setTimeout(() => {
+        handleUserLogin(userDetails);
+      }, 2000);
     }
   } catch (error) {
     console.log(error);
