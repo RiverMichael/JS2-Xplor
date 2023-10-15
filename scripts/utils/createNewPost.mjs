@@ -1,3 +1,7 @@
+/**
+ * Creates a new post object from the data in the new post form.
+ * @returns {Object} - The new post object.
+ */
 export function createNewPost() {
   const form = document.querySelector("#form-new-post");
   const formData = new FormData(form);

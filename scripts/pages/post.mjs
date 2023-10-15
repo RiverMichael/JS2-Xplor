@@ -12,6 +12,9 @@ linkGoBack.addEventListener("click", function () {
   history.back();
 });
 
+/**
+ * Displays the details of a single post by fetching the post details, rendering them, and setting up event listeners.
+ */
 async function displayPost() {
   try {
     const post = await getPostDetails();

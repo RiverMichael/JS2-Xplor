@@ -1,3 +1,6 @@
+/**
+ * Initializes Bootstrap form validation on all forms with the "needs-validation" class.
+ */
 export function bootstrapFormValidation() {
   (() => {
     "use strict";

@@ -7,6 +7,9 @@ import { clearHTML } from "../components/clearHTML.mjs";
 
 const postsContainer = document.querySelector("#profile-posts");
 
+/**
+ * Displays the profile details and posts of a user by fetching the data, rendering it, and setting up event listeners.
+ */
 async function displayProfile() {
   try {
     const userName = getFromStorage("userName");

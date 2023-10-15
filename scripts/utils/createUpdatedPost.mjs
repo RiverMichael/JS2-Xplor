@@ -1,3 +1,7 @@
+/**
+ * Creates an updated post object from the data in the update post form.
+ * @returns {Object} - The updated post object.
+ */
 export function createUpdatedPost() {
   const updatePostForm = document.querySelector("#updatePostForm");
   const formData = new FormData(updatePostForm);

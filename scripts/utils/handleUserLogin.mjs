@@ -1,13 +1,24 @@
 import { doFetch } from "../api/doFetch.mjs";
 import { LOGIN_URL } from "../api/api.mjs";
 import { saveToStorage } from "./saveToStorage.mjs";
+import { postData } from "../api/fetchOptions.mjs";
 
+/**
+ * Handles the login of a user by sending a POST request to the API.
+ * @param {Object} userDetails - An object containing the details of the user to login.
+ * @example
+ * ```js
+ * const userDetails = {
+ * email: 'johndoe@stud.noroff.no',
+ * password: 'password123'
+ * };
+ *
+ *handleUserLogin(userDetails);
+ ```
+ */
 export async function handleUserLogin(userDetails) {
   try {
-    const options = {
-      method: "POST",
-      body: JSON.stringify(userDetails),
-    };
+    const options = postData(userDetails);
     const result = await doFetch(LOGIN_URL, options);
     let accessToken;
     if (result.accessToken) {

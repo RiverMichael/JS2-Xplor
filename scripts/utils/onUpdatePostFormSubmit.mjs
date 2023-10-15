@@ -4,6 +4,9 @@ import { clearHTML } from "../components/clearHTML.mjs";
 import { renderPostDetails } from "../components/render.mjs";
 import { getPostDetails } from "./getPostDetails.mjs";
 
+/**
+ * Handles the submission of the update post form by updating the post, displaying a success message, and rendering the updated post details.
+ */
 export async function onUpdatePostFormSubmit(event) {
   event.preventDefault();
   try {

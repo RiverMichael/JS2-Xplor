@@ -1,11 +1,10 @@
 import { onRegisterFormSubmit } from "../utils/onRegisterFormSubmit.mjs";
 
+/**
+ * Sets up the register form submit event listener.
+ */
 function register() {
-  try {
-    const registerForm = document.querySelector("#register-form");
-    registerForm.addEventListener("submit", onRegisterFormSubmit);
-  } catch (error) {
-    console.log(error);
-  }
+  const registerForm = document.querySelector("#register-form");
+  registerForm.addEventListener("submit", onRegisterFormSubmit);
 }
 register();

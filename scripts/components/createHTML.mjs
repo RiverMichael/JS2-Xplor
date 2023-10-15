@@ -1,3 +1,17 @@
+/**
+ * Creates HTML for a post and appends it to a parent element.
+ * @param {Object} post - The post object.
+ * @param {HTMLElement} parentElement - The parent element to append the post HTML to.
+ * @example
+ * ```js
+ * const post = {
+ * id: '123',
+ * title: 'hello world',
+ * };
+ *
+ * const parentElement = document.querySelector('#postsContainer');
+ * createPostHtml(post, parentElement);
+ */
 export function createPostHtml(post, parentElement) {
   const cardContainer = document.createElement("div");
   cardContainer.classList.add("col-12", "col-lg-6", "col-xxl-4");
@@ -68,6 +82,20 @@ export function createPostHtml(post, parentElement) {
   parentElement.append(cardContainer);
 }
 
+/**
+ * Creates HTML for a post and appends it to a parent element.
+ * @param {Object} post - The post object.
+ * @param {HTMLElement} parentElement - The parent element to append the post HTML to.
+ * @example
+ * ```js
+ * const post = {
+ * title: 'hello world',
+ * body: 'this is the body',
+ * };
+ *
+ * const parentElement = document.querySelector('#postContainer');
+ * createPostHtml(post, parentElement);
+ */
 export function createPostDetailsHtml(post, parentElement) {
   const card = document.createElement("div");
   card.classList.add("card", "bg-dark", "text-white", "rounded-4", "shadow");

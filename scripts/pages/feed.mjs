@@ -8,6 +8,9 @@ import { setSearchListeners } from "../utils/setSearchListeners.mjs";
 
 const feedPostsContainer = document.querySelector("#feed-container");
 
+/**
+ * Renders the feed by fetching posts, rendering them, and setting up event listeners.
+ */
 async function feed() {
   try {
     const posts = await getPosts();
