@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore this adventure post" />
+    <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../dist/css/index.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link rel="icon" type="image/x-icon" href="/images/logo/xplor_logo-light.png" />
+    <link rel="icon" href="data:;base64,=" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="module" src="../scripts/common.mjs" defer></script>
+    <script type="module" src="../scripts/pages/post.mjs"></script>
+  </head>
+  <body class="bg-primary text-white min-vh-100 d-flex flex-column">
+    <header class="bg-primary sticky-top p-1">
+      <nav class="navbar navbar-expand-sm bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a href="/" class="navbar-brand">
+            <img src="../images/logo/xplor_logo-light.png" alt="Xplor logotype" class="logo" />
+          </a>
+
+          <button class="navbar-toggler ms-auto bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav align-items-center text-center fw-bold ms-auto p-2">
+              <a href="/feed/" class="nav-item nav-link text-uppercase fs-5" aria-current="page">feed</a>
+              <a href="/profile/" class="nav-item nav-link text-uppercase fs-5">profile</a>
+              <button class="nav-item nav-link text-uppercase fs-5 d-sm-none logout-button">log out</button>
+
+              <div class="nav-item dropdown d-none d-sm-block">
+                <button class="btn nav-link dropdown-toggle d-flex align-items-center" id="header-profile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="profile menu">
+                  <i class="bi bi-person-circle"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a href="/profile/" class="dropdown-item">My profile</a>
+                  </li>
+                  <li>
+                    <button class="dropdown-item logout-button" type="button">Log out</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="d-flex flex-column align-items-center justify-content-center">
+      <div class="container my-5">
+        <div class="d-flex mb-3 mb-sm-5 link-info link-underline-opacity-0 link-opacity-50-hover align-items-center" id="link-goBack">
+          <i class="bi bi-arrow-left me-2 fs-4"></i>
+          <p class="m-0">Go back</p>
+        </div>
+        <section class="container">
+          <div class="row justify-content-center visually-hidden" id="editPostContainer">
+            <div class="col col-lg-8">
+              <div class="accordion accordion-flush mb-4" id="accordionEditPost">
+                <div class="accordion-item bg-primary text-white">
+                  <div class="accordion-header d-flex justify-content-center">
+                    <button type="button" class="btn px-4 py-1 btn-info text-white text-uppercase fw-bold collapsed" data-bs-toggle="collapse" data-bs-target="#edit-collapse" aria-expanded="false" area-controls="edit-collapse">Edit post</button>
+                  </div>
+
+                  <div class="accordion-collapse collapse" id="edit-collapse" data-bs-parent="accordionEditPost">
+                    <div class="accordion-body">
+                      <form id="updatePostForm" class="bg-primary shadow-sm p-3 border border-secondary rounded-4">
+                        <div class="row">
+                          <div class="col mb-3 shadow-sm">
+                            <label for="updatePostTitle" class="form-label">Title</label>
+                            <input type="text" name="title" id="updatePostTitle" class="form-control" placeholder="New title" />
+                          </div>
+
+                          <div class="col mb-3 shadow-sm">
+                            <label for="updatePostKeywords" class="form-label">Keywords</label>
+                            <input type="text" name="keywords" id="updatePostKeywords" class="form-control" placeholder="New keywords" />
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="updatePostStory" class="form-label">Story</label>
+                          <textarea name="story" id="updatePostStory" cols="30" rows="3" class="form-control shadow-sm" placeholder="Updated story"></textarea>
+                        </div>
+
+                        <div class="row align-items-end mb-3">
+                          <div class="col mb-3">
+                            <label for="updatePostImage" class="form-label"
+                              ><i class="bi bi-images"><span class="ms-2 fst-normal">Add image URL</span></i></label
+                            >
+                            <input class="form-control form-control-sm" id="updatePostImage" type="url" name="image" placeholder="http://" />
+                          </div>
+
+                          <div class="col-auto mb-3">
+                            <button type="submit" class="btn btn-info text-white text-uppercase fw-bold">update</button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button type="button" id="buttonDeletePost" class="btn btn-sm btn-danger text-white text-uppercase fw-bold">delete post</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toast-container position-fixed mt-2 top-0 end-0 p-3">
+              <div class="toast bg-success" id="updatePostValidation" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-success text-light">
+                  <h5 class="my-0">Post update</h5>
+                  <button class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="close"></button>
+                </div>
+                <div class="toast-body fs-6">Your post was successfully updated</div>
+              </div>
+            </div>
+
+            <div class="toast-container position-fixed mt-2 top-0 end-0 p-3">
+              <div class="toast bg-danger" id="deletePostValidation" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-danger text-light">
+                  <h5 class="my-0">Post deleted</h5>
+                  <button class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="close"></button>
+                </div>
+                <div class="toast-body fs-6">Your post was successfully deleted</div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col col-lg-8" id="post-details">
+              <div class="row justify-content-center mt-5">
+                <div class="loader align-self-center"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-primary mt-auto">
+      <div class="container-fluid">
+        <p class="text-center fw-light">Copyright &copy; 2023 | <a href="https://www.michaelriver.dev" target="_blank" class="link-light link-underline-opacity-0 link-opacity-50-hover">Michael River Nilsson</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
