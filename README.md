@@ -8,7 +8,7 @@
   </a>
 
 <h3>JavaScript2 (JS2)- Xplor</h3>
-<p><i>A social media application built with JavaScript, Bootstrap and Sass.</i></p>
+<p><i>A social media application built with JavaScript, Bootstrap, Sass, and the Noroff API.</i></p>
 
 [Link to project][github-repo] - [Link to live site][live-site]
 
@@ -46,17 +46,13 @@
 
 ### Description
 
-This is my project for the course JavaScript 2 (JS2) at [Noroff](https://www.noroff.no). The assignment was to create JavaScript functionality for a responsive social media application that I built in the course CSS Frameworks using Bootstrap and and customizing styles with Sass.
+This was my project for the course _JavaScript 2 (JS2)_ at [Noroff](https://noroff.no). The assignment was to add JavaScript functionality for a responsive social media application that I built in the course CSS Frameworks using Bootstrap, and customizing styles with Sass.
 
-For the deployment of the website I'm using [Netlify](https://app.netlify.com).
+The implementation was done using the Noroff Social API, provided by [Noroff](https://noroff.no), and deployed using [Netlify](https://app.netlify.com).
 
 ### Built With
 
-- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/html.svg" alt="html" height="30" width="40">HTML</a>
-- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/css.svg" alt="css" height="30" width="40">CSS</a>
-- <a href="https://getbootstrap.com/" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/bootstrap.svg" alt="bootstrap" height="30" width="40">Bootstrap</a>
-- <a href="https://https://sass-lang.com//" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/sass.svg" alt="bootstrap" height="30" width="40">Sass</a>
-- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/ProgrammingLanguages/javascript.svg" alt="javascript" height="30" width="40">JavaScript</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/html.svg" alt="html" height="30" width="40"></a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/css.svg" alt="css" height="30" width="40"></a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/ProgrammingLanguages/javascript.svg" alt="javascript" height="30" width="40"></a> <a href="https://getbootstrap.com/" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/bootstrap.svg" alt="bootstrap" height="30" width="40"></a> <a href="https://https://sass-lang.com//" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/sass.svg" alt="sass" height="30" width="40"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
