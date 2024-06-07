@@ -8,7 +8,7 @@
   </a>
 
 <h3>JavaScript2 (JS2)- Xplor</h3>
-<p>A social media application built with JavaScript, Bootstrap and Sass.</p>
+<p><i>A social media application built with JavaScript, Bootstrap and Sass.</i></p>
 
 [Link to project][github-repo] - [Link to live site][live-site]
 
@@ -82,25 +82,25 @@ cd replace-with-your-desired-folder
 git init
 ```
 
-2. Clone the repo:
+3. Clone the repo
 
 ```sh
 git clone https://github.com/RiverMichael/JS2-Xplor.git
 ```
 
-3. Navigate to the project folder
+4. Navigate to the project folder
 
 ```sh
-cd name-of-the-project-folder
+cd JS2-Xplor
 ```
 
-4. Install NPM packages
+5. Install NPM packages
 
 ```sh
 npm i
 ```
 
-5. Start the project, this will run the watch script and start up a live-server
+6. Start the project, this will run the watch script and start up a live-server
 
 ```sh
 npm start
@@ -126,7 +126,7 @@ If you want to help me make this project better, please fork the repo and create
 
 ## Contact
 
-Michael "River" Nilsson - [mrn@michaelriver.dev](mailto:mrn@michaelriver.dev) - [michaelriver.dev](https://www.michaelriver.dev)
+Michael "River" Nilsson - [mrn@michaelriver.dev](mailto:mrn@michaelriver.dev) | [michaelriver.dev](https://www.michaelriver.dev)
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -134,7 +134,7 @@ Michael "River" Nilsson - [mrn@michaelriver.dev](mailto:mrn@michaelriver.dev) - 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
 
